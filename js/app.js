@@ -31,7 +31,9 @@ const displayContent = (text) => {
 };
 
 const switchTab = (id) => {
+  document.getElementById("question").style.display = "none";
   if (id === "posts") {
+    document.getElementById("question").style.display = "block";
     document.getElementById("posts").style.display = "grid";
     document.getElementById("liked").style.display = "none";
     document.getElementById("reported").style.display = "none";
